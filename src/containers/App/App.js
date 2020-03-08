@@ -1,4 +1,4 @@
-//import React, { Component } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 //import { connect } from 'react-redux';
 //import { bindActionCreators } from 'redux';
@@ -7,11 +7,11 @@ import './App.css';
 import Orders from '../../components/Orders/Orders';
 import OrderForm from '../../components/OrderForm/OrderForm';
 
-export class App extends Component {
-  constructor(props) {
-    super();
-    //this.props = props;
-  }
+// export class App extends Component {
+//   constructor(props) {
+//     super();
+//     //this.props = props;
+//   }
 
   // componentDidMount() {
   //   getOrders()
@@ -19,19 +19,17 @@ export class App extends Component {
   //     .catch(err => console.error('Error fetching:', err));
   // }
 
-  render() {
+  export const App = () => {
     return (
       <main className="App">
         <header>
           <h1>Burrito Builder</h1>
-          <OrderForm />
-        </header>
-        
-        {/* <Orders orders={this.props.orders}/> */}
+          <OrderForm/>
+          </header>
       </main>
-    );
+    )
   }
-}
+
 
 // export const mapStateToProps = ({ orders }) => ({
 //   orders
