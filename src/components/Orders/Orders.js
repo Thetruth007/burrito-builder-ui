@@ -13,7 +13,6 @@ import OrderForm from '../../components/OrderForm/OrderForm';
 export class Orders extends Component {
   constructor(props) {
     super();
-    this.state = state
   }
 } 
 
